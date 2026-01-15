@@ -18,13 +18,15 @@
     --neutral-trans: #aae5dc8f;
     --primary-contrast: #6969B3;
     --secondary-contrast: #533A7B;
+    --background-page: #f5f5f5b3;
 
     --font: 'DM Sans', Arial, Helvetica, sans-serif;
 }
 
 body, html {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--background-page)
 }
 
 .logo {
@@ -39,22 +41,19 @@ header {
 
 nav {
     display: flex;
-    width: 228px;
+    width: 230px;
     justify-content: space-between;
     background-color: var(--primary-color);
     padding: 4px;
-    border-radius: 28px;
+    border-radius: 30px;
     margin: 15px auto 8px; 
 }
 
-nav li {
-    padding: 8px 10px;
-}
-
 nav a {
+    padding: 8px 10px;
     color: white;
     font-weight: 500;
-    transition-duration: 0.2s;
+    transition: color 0.4s;
 }
 
 nav a:hover {
@@ -64,13 +63,10 @@ nav a:hover {
 .on {
     background-color: var(--neutral);
     border-radius: 20px;
-}
-
-.on a {
     color: var(--primary-color);
 }
 
-.on a:hover {
+.on:hover {
     color: var(--primary-contrast);
 }
 
@@ -113,15 +109,41 @@ main {
 }
 
 .projetos__item img {
-    min-width: 150px;
+    min-width: 130px;
     width: 100%;
     max-width: 400px;
-    height: 100%;
+    border-radius: 15px;
+    height: auto;
+    max-height: 300px;
 }
 
-.projetos__item p {
+.item__description {
     max-width: 400px;
     margin: 10px 0 0;
+}
+
+.projetos__links {
+    display: flex;
+    margin: 15px 0;
+}
+
+.btn {
+    border-radius: 4px;
+    margin: 0 4px;
+    transition-duration: 0.3s;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+.projetos__links .secondary-btn{
+    color: var(--secondary-color);
+    outline: 1px solid var(--secondary-color);
+    font-weight: 500;
+}
+
+.projetos__links .secondary-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 #contato {
@@ -138,27 +160,24 @@ main {
     background-color: var(--neutral-trans);
 }
 
-#contato h2 {
+.contato__title {
+    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
-.links { 
+.contato__links { 
     display: flex;
     margin-top: 25px;
 }
 
-.links li a{
+.contato__links .primary-btn{
     display: flex;
     align-items: center;
-    padding: 10px 8px;
     background-color: var(--secondary-contrast);
     color: white;
-    border-radius: 4px;
-    margin: 0 4px;
-    transition-duration: 0.2s;
 }
 
-.links li a:hover {
+.contato__links .primary-btn:hover {
     background-color: var(--secondary-color);
 }
 
@@ -190,6 +209,7 @@ footer {
         width: 50px;
         background-color: white;
         border-radius: 50%;
+        padding: 5px;
         margin-left: 10px;
     }
 
@@ -204,14 +224,10 @@ footer {
 
     .on {
         background-color: var(--primary-color);
-    }
-
-    .on a {
         color: white;
-
-        &:hover {
-            color: var(--neutral);
-        }
     }
-
+    
+    .on:hover {
+        color: var(--neutral);
+    }
 }
