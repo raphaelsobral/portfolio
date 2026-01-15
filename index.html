@@ -7,23 +7,16 @@
     <title>Raphael Sobral - Desenvolvedor Front End</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="main.js"></script>
 </head>
-<body id="inicio">
+<body>
+    <section id="inicio"></section>
     <header>
         <img src="assets/images/logo.png" alt="" class="logo" aria-hidden="true">
         <nav>
-            <ul>
-                <li class="on"><a href="#inicio">Início</a></li>
-            </ul>
-            <ul>
-                <li><a href="#projetos">Projetos</a></li>
-            </ul>
-            <ul>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <!-- <a href="#inicio" class="on">Início</a>
+            <a href="#inicio" class="on">Início</a>
             <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a> -->
+            <a href="#contato">Contato</a>
         </nav>
     </header>
     <main >
@@ -40,14 +33,14 @@
                 </picture>
                 <p class="item__description">Acordeão de FAQ criado usando HTML, CSS e JavaScript. Desafio proposto pelo Frontend Mentor.</p>
 
-                <!-- <ul class="projetos__links">
+                <ul class="projetos__links">
                     <li>
-                        <a href="#" class="btn secondary-btn">Acessar projeto</a>
+                        <a href="https://raphaelsobral.github.io/studies/challenge-017/index.html" target="_blank" class="btn secondary-btn">Acessar projeto</a>
                     </li>
                     <li>
-                        <a href="#" class="btn secondary-btn">Repositório</a>
+                        <a href="https://github.com/raphaelsobral/studies/tree/main/challenge-017" target="_blank" class="btn secondary-btn">Repositório</a>
                     </li>
-                </ul> -->
+                </ul>
             </article>
 
             <article class="projetos__item">
@@ -56,14 +49,14 @@
                 </picture>
                 <p class="item__description">Bola de Cristal interativa que responde perguntas. Criado usando promises em JavaScript.</p>
 
-                <!-- <ul class="projetos__links">
+                <ul class="projetos__links">
                     <li>
-                        <a href="#" class="btn secondary-btn">Acessar projeto</a>
+                        <a href="https://raphaelsobral.github.io/bola-de-cristal/" target="_blanket" class="btn secondary-btn">Acessar projeto</a>
                     </li>
                     <li>
-                        <a href="#" class="btn secondary-btn">Repositório</a>
+                        <a href="https://github.com/raphaelsobral/bola-de-cristal" target="_blank" class="btn secondary-btn">Repositório</a>
                     </li>
-                </ul> -->
+                </ul>
             </article>
 
             <article class="projetos__item">
@@ -72,14 +65,14 @@
                 </picture>
                 <p class="item__description">Catálogo de livros digital. Criado usando a API Open Library. </p>
 
-                <!-- <ul class="projetos__links">
+                <ul class="projetos__links">
                     <li>
-                        <a href="#" class="btn secondary-btn">Acessar projeto</a>
+                        <a href="https://raphaelsobral.github.io/biblioteca-pavilhao/" target="_blank" class="btn secondary-btn">Acessar projeto</a>
                     </li>
                     <li>
-                        <a href="#" class="btn secondary-btn">Repositório</a>
+                        <a href="https://github.com/raphaelsobral/biblioteca-pavilhao" target="_blank" class="btn secondary-btn">Repositório</a>
                     </li>
-                </ul> -->
+                </ul>
             </article>
 
             <article class="projetos__item">
@@ -88,37 +81,29 @@
                 </picture>
                 <p class="item__description">Lista de tarefas funcional. Criada usando Local Storage em JavaScript.</p>
 
-                <!-- <ul class="projetos__links">
+                <ul class="projetos__links">
                     <li>
-                        <a href="#" class="btn secondary-btn">Acessar projeto</a>
+                        <a href="https://raphaelsobral.github.io/lista-de-tarefas/" target="_blank" class="btn secondary-btn">Acessar projeto</a>
                     </li>
                     <li>
-                        <a href="#" class="btn secondary-btn">Repositório</a>
+                        <a href="https://github.com/raphaelsobral/lista-de-tarefas" target="_blank" class="btn secondary-btn">Repositório</a>
                     </li>
-                </ul> -->
+                </ul>
             </article>
         </section>
 
         <section id="contato">
-                <h2>Contato</h2>
+                <h2 class="contato__title">Contato</h2>
                 <p>Sou formado em Gestão da Tecnologia da Informação e atualmente curso Desenvolvimento Web. Busco minha primeira oportunidade como estagiário  para aplicar meus conhecimentos em <strong>HTML, CSS e JavaScript</strong>. Gosto de projetos criativos, que envolvam programação e design. Clique abaixo para conferir outros projetos!</p>
 
-                <ul class="links">
-                    <li><a href="https://github.com/raphaelsobral"
-                        target="_blank">
-                        <i class="fa-brands fa-github icon" ></i>
-                        githab
+                <ul class="contato__links">
+                    <li><a href="https://github.com/raphaelsobral" target="_blank" class="btn primary-btn">
+                        <i class="fa-brands fa-github icon"></i>github
                     </a></li>
         
-                    <li><a href="https://www.linkedin.com/in/raphael-sobral-38766430b/" target="_blank">
-                        <i class="fa-brands fa-linkedin icon"></i>
-                        linkedon</a></li>
-
-                    <li><a href="#">
-                        <i class="fa-regular fa-envelope icon"></i>
-                        emaíl
+                    <li><a href="https://www.linkedin.com/in/raphael-sobral-38766430b/" target="_blank" class="btn primary-btn">
+                        <i class="fa-brands fa-linkedin icon"></i>linkedin
                     </a></li>
-                    <!-- excluir o botão de email -->
                 </ul>
         </section>
     </main>
